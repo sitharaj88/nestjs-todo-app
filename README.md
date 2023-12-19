@@ -1,73 +1,43 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+# NestTodoApp
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is a Todo application built with NestJS. The application allows users to manage their tasks effectively. It provides features such as creating, updating, deleting, and viewing tasks. This README provides information about the project, its purpose, and instructions on how to set up and run the application.
 
-## Installation
+## API Detail
 
-```bash
-$ npm install
-```
+The application exposes a RESTful API for managing todos. The API endpoints include:
 
-## Running the app
+- `/todo` - GET: Get all todos
+- `/todo/:id` - GET: Get a specific todo by ID
+- `/todo` - POST: Create a new todo
+- `/todo/:id` - PUT: Update a todo by ID
+- `/todo/:id` - DELETE: Delete a todo by ID
 
-```bash
-# development
-$ npm run start
+## How to Run the Application
 
-# watch mode
-$ npm run start:dev
+To run the application, follow these steps:
 
-# production mode
-$ npm run start:prod
-```
+1. Install dependencies by running the following command:
+  ```bash
+  $ npm install
+  ```
 
-## Test
+2. Start the application in development mode by running the following command:
+  ```bash
+  $ npm run start:dev
+  ```
 
-```bash
-# unit tests
-$ npm run test
+  This will start the application and enable hot-reloading for development.
 
-# e2e tests
-$ npm run test:e2e
+3. Access the application by navigating to `http://localhost:3000` in your web browser.
 
-# test coverage
-$ npm run test:cov
-```
+4. Use the provided API endpoints to interact with the application.
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+If you need any assistance or have any questions, please refer to the [documentation](https://docs.nestjs.com) or reach out to the project maintainers.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is licensed under the [Apache License 2.0](LICENSE).
