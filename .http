@@ -1,0 +1,39 @@
+### Get all Todos
+GET http://localhost:3000/todo
+Content-Type: application/json
+
+###
+
+### Get Todo by ID
+GET http://localhost:3000/todo/3
+Content-Type: application/json
+
+###
+
+### Create a new Todo
+POST http://localhost:3000/todo
+Content-Type: application/json
+
+{
+  "title": "New Todo",
+  "completed": false
+}
+
+###
+
+### Update a Todo
+PUT http://localhost:3000/todo
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Todo",
+  "completed": true
+}
+
+###
+
+### Delete a Todo
+DELETE http://localhost:3000/todo/1
+Content-Type: application/json
+
